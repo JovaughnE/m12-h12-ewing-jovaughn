@@ -1,4 +1,32 @@
-export default class App {
+//import the modules in from the module directory
+
+import { header } from '.modules/header';
+import { body } from '.modules/body';
+
+//create an master App class
+
+class App {
+    constructor() {
+        this.renderTemplate();
+
+    }
+
+    renderTemplate() { //method to run the template
+        const template = `   
+            <h1>${header.title}</h1>
+            <p>${body.bodyContent}</p>
+        
+        `; // creating a template string
+
+        document.body.innerHTML = template; // method to run the method above to renderTemplate
+    }
+}
+
+//initialize the App class
+
+new App;
+
+/*export default class App {
     constructor(food, meat, side, veg, drink, extra, dressing, condiment, spicy) {
         this.food = food;
         this.meat = meat;
@@ -53,4 +81,4 @@ export default class App {
             }
         }
 
-export { App };
+export { App };*/
