@@ -1,7 +1,7 @@
 //import the modules in from the module directory
 
-import { header } from '.modules/header';
-import { body } from '.modules/body';
+import { header } from './header';
+import { body } from './body';
 
 //create an master App class
 
@@ -18,7 +18,7 @@ class App {
         
         `; // creating a template string
 
-        document.body.innerHTML = template; // method to run the method above to renderTemplate
+        document.body.innerHTML = template; // method to render the template to the screen
     }
 }
 

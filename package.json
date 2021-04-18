@@ -1,0 +1,30 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JovaughnE/m12-h12-ewing-jovaughn.git"
+  },
+  "author": "Jovaughn Ewing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JovaughnE/m12-h12-ewing-jovaughn/issues"
+  },
+  "homepage": "https://github.com/JovaughnE/m12-h12-ewing-jovaughn#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}
